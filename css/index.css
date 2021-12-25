@@ -1,0 +1,944 @@
+body {
+        margin: 0px;
+}
+a, p, h1, div, article, section, li, ul, ol, nav, footer, header 
+        { 
+           user-select: none;
+           -webkit-user-select: none;
+           -moz-user-select: none;
+           -ms-user-select: none;
+         }
+#lbcabeza {
+    width: 100%;
+    height: 45px;
+    background-color: #120000;
+    position: relative;
+    z-index: 1;
+}
+#cjnav {
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 100%;
+        width: auto;
+}
+#cjbtn {
+         position: relative;
+         height: 100%;
+         width: 45px;
+         display: inline-block;
+}
+#cjbtn > div {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                margin-top: 2.5px;
+                margin-bottom: 2.5px;
+}
+#btnmenu {  width: 100%;
+            height: 100%; 
+            content: url(../resource/menu.png);
+            cursor: pointer;
+            opacity: 0.5;
+         }
+#btnmenu:hover { opacity: 1;}
+#cjtitle {
+            position: absolute;
+            display: inline-block;
+            width: auto;
+            height: 100%;
+            margin-left: 10px;
+}
+#cjtitle > div { 
+                 position: relative;
+                 display: inline-block;
+                 height: 35px;
+                 margin-top: 5px;
+ }
+ #cjtitle > div > h1 {
+                        color: #fff;
+                        font-size: 21px;
+                        font-weight: bold;
+                        font-family: Helvetica, Serif, Calibri;
+                        font-style: oblique;
+                        position: relative;
+                        top: -15px;
+                        display: none;
+ }
+ #nomemp {
+           content: url(../resource/titulo.png);
+           width: 125px;
+           height: 23px;
+           margin-top: 7px;
+ }
+ #cjnotif {
+            position: absolute;
+            display: inline-block;
+            width: auto;
+            height: 100%;
+            right: 0px;
+ }
+.losbtones { 
+            position: relative;
+            display: inline-block;
+            height: 32px;
+            width: 30px;
+            margin-top: 6px;
+            margin-left: 10px;
+  }
+.losbtones:first-child { display: none; }
+.losbtones:last-child { display: none; }
+.lasimgs {
+            width: 100%;
+            height: 100%; 
+            cursor: pointer;
+            opacity: 0.7;
+}
+.lasimgs:hover { opacity: 1; }
+#btnbus { 
+            content: url(../resource/buscare.png);
+ }
+ #btnmens {
+            content: url(../resource/mensaje.png);
+ }
+ #btnnotif {
+            content: url(../resource/notificacion.png);
+ }
+ #btncarri {
+            content: url(../resource/carrito.png);
+ }
+ #lbpies {
+        width: 100%;
+        height: 44px;
+        background-color: #120000;
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
+ }
+ #lbpies > article {
+                        margin-left: 0px;
+                        margin-right: 25px;
+                        height: 100%;
+                        width: auto;
+                        text-align: center;
+ }
+ .btnabajo {
+                position: relative;
+                display: inline-block;
+                width: 35px;
+                height: 34px;
+                margin-top: 5px;
+                margin-left: 20px;
+ }
+
+ .btnabajo:first-child { margin-left: 0px; }
+ .imgfooter {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                cursor: pointer;
+ }
+ #btnuser { 
+        content: url(../resource/user.png);
+}
+#btnuser:hover { 
+        content: url(../resource/user3.png);
+}
+#btnyoutube { 
+        content: url(../resource/youtube.png);
+}
+#btnyoutube:hover { 
+        content: url(../resource/youtube3.png);
+}
+#btnpodcast { 
+        content: url(../resource/podcast.png);
+}
+#btnpodcast:hover { 
+        content: url(../resource/podcast3.png);
+}
+#btnpost { 
+        content: url(../resource/post.png);
+}
+#btnpost:hover {
+          content: url(../resource/post3.png);
+}
+#btnimg { 
+        content: url(../resource/imagen.png);
+}
+#btnimg:hover { 
+        content: url(../resource/imagen3.png);
+}
+#contenidos {
+                height: auto;
+                width: 100%;
+                margin-bottom: 44px;
+}
+#cjmenu {
+          width: 0px;
+          -webkit-transition: all 4ms ease-in-out 3ms;
+          -moz-transition: all 4ms ease-in-out 3ms;
+          -o-transition: all 4ms ease-in-out 3ms;
+          transition: all 4ms ease-in-out 3ms;
+          height: 100%;
+          background-color: #fff;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          border-right: #f9f9f9 1px solid;
+          box-shadow: #f6f6f6 0px 0px 3px 0px;
+          z-index: 2;
+          visibility: hidden;
+}
+#ttmenu { 
+          width: 100%;
+          height: 45px;
+          border-bottom: 1px solid #f9f9f9;
+          box-shadow: #f9f9f9 0px 2px 0px 0px;
+          display: inline-block;
+          position: relative;
+ }
+ #ttmenu > div:first-child { display: inline-block;
+                             width: auto;
+                             height: 40px;
+                             margin-top: 2.5px;
+                             margin-left: 10px;
+                             
+}
+#ttmenu > div:last-child { display: inline-block;
+                           width: 40px;
+                           height: 40px;
+                           margin-right: 5px;
+                           margin-top: 2.5px;
+                           position: absolute;
+                           right: 0px;
+                           border-left: 1px solid #eee;
+ }
+ #ttmenu > div:first-child > p { text-align: center;
+                                 font-size: 20px;
+                                 font-family: Helvetica, Serif, Calibri;
+                                 font-weight: bold;
+                                 color: #555;
+                                 position: relative;
+                                 bottom: 10px;
+}
+#ttmenu > div:last-child > p{   text-align: center;
+                                font-size: 20px;
+                                font-family: Helvetica, Serif, Calibri;
+                                font-weight: bold;
+                                color: #555;
+                                position: relative;
+                                bottom: 10px;
+}
+
+#ttmenu > div:last-child > p:hover {
+        color: #2b0000;
+}
+
+#cjlista { 
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            position: relative;
+            margin-top: 10px;
+}
+
+#listamenu {
+             width: auto;
+             height: auto;
+             position: relative;
+             padding: 0;
+	     margin: 0;
+}
+
+#listamenu > li { list-style: none;
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  height: 35px;
+                  cursor: pointer;
+                  text-indent: 10px;
+                  border-bottom: 1px solid #f9f9f9;
+                  box-shadow: #fefefe 0px 2px 0px 0px;
+                }
+#listamenu > li > a { position: relative;
+                      top: 10px;
+                      font-family: Helvetica, Serif, Calibri; 
+                      font-size: 14px;
+                    }
+#listamenu > li:hover { background-color: #fdd6e5; }
+#submenu {
+           position: relative;
+           height: 0px;
+           width: auto;
+           display: none;
+}
+#submenu > li { list-style: none;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 0px;
+                cursor: pointer;
+                text-indent: 10px;
+                position: relative;
+                -webkit-transition: height 1ms ease 2ms;
+                -moz-transition: height 1ms ease 2ms;
+                -o-transition: height 1ms ease 2ms;
+                transition: height 1ms ease 2ms;
+                visibility: hidden;
+                border-bottom: 1px solid #f9f9f9;
+                box-shadow: #fefefe 0px 2px 0px 0px;
+              }
+#submenu > li > a { position: relative;
+                    top: 8px;
+                    font-family: Helvetica, Serif, Calibri;
+                    font-size: 12px; 
+                  }
+#submenu > li:hover { background-color: #efa4c0; }
+#cjlogo { 
+          display: inline-block;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          margin-top: 20px;
+ }
+ #imglogo {
+            opacity: 0.05;
+            width: 90px;
+            height: 90px;
+            content: url(../resource/logo.jpg);
+ }
+article[id^='cjacerca'] { margin-left: 10px;
+                          margin-top: 10px;
+                          width: auto;
+                          height: auto;
+                          position: relative;
+ }
+div[id^='ttacerca'] {  text-indent: 10px;
+                       height: 30px;
+                       font-family: Helvetica, Serif, Calibri;
+                       font-size: 14px;
+                       border: 1px solid #fefefe;
+                       box-shadow: #f9f9f9 0px 2px 0px 0px;
+                       font-weight: bold;
+ }
+a[id^='titus'] { position: relative; top: 10px; }
+div[id^='ttcontent'] {  margin-top: 10px; 
+                        text-align: justify;
+                        width: auto;
+                        height: auto;
+                        border: 1px solid #feffff;
+                        font-family: Helvetica, Serif, Calibri;
+                        font-size: 12px;
+                        margin-right: 10px;
+}
+#listobj > li { 
+                margin-top: 5px;
+                margin-bottom: 5px;
+                height: 15px;
+}
+#cjcontact { margin-top: 15px;
+             margin-bottom: 15px;
+             margin-left: 10px;
+             margin-right: 10px;
+}
+#concontac { z-index: 1; margin-bottom: 5px; }
+#ttcontact { margin-bottom: 10px;
+             font-family: Helvetica, Serif, Calibri;
+             font-size: 19px;
+             font-weight: bold;
+}
+#nomcont, #mailcont, #celcont, #comencont { 
+           font-family: Helvetica, Serif, Calibri;
+           font-size: 17px;
+           margin-top: 4px;
+           margin-bottom: 3px;
+           color: #555;
+}
+#textnom, #textmail, #textcel { width: 150px;
+           height: 17px;
+           margin-top: 3px;
+           margin-bottom: 3px;
+           z-index: 2;
+           font-size: 15px;
+           border: none;
+           border-bottom: 1px solid #f3f3f3;
+           box-shadow: #fefefe 0px 2px 0px 0px;
+           outline: none;
+}
+#textcomen {
+        width: 210px;
+        height: 70px;
+        text-align: justify;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        z-index: 2;
+        font-size: 15px;
+        border: 1px solid #f3f3f3;
+        box-shadow: #fefefe 0px 2px 2px 0px;
+        resize: none;
+        outline: none;
+}
+#btnenviar {
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        background-color: #120000;
+        cursor: pointer;
+        color: #fff;
+        font-family: Helvetica, Serif, Calibri;
+        font-size: 17px;
+        text-shadow: #eee 0px 0px 2px 2px;
+        text-align: center;
+        position: relative;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+}
+#btnenviar:hover { background-color: #2b0000; }
+#tfooter {
+        width: auto;
+        height: 210px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: #ff73a1b0;
+}
+#tdir {
+        width: auto;
+        height: auto;
+        margin-top: 5px;
+        /** margin-bottom: 25px; **/
+}
+#btwhats{
+          width: 45px;
+          height: 45px;
+          display: inline-block;
+          content: url("../resource/whatsapp.png");
+          margin: 15px;
+          cursor: pointer;
+          opacity: 0.5;
+}
+#btwhats:hover { opacity: 1; }
+#bttelem {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin: 15px;
+        content: url("../resource/telegram.png");
+        cursor: pointer;
+        opacity: 0.5;
+}
+#bttelem:hover { opacity: 1; }
+#btmensen {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin: 15px;
+        content: url("../resource/messenger.png");
+        cursor: pointer;
+        opacity: 0.5;
+}
+#btmensen:hover { opacity: 1; }
+#lbtelef { font-weight: bold; }
+#lbtelef, #txttelf, #txtemail { 
+           width: auto;
+           height: 20px;
+           margin-bottom: 5px;
+           font-family: Helvetica, Serif, Calibri;
+           font-size: 13px;
+           text-indent: 12px;
+           position: relative;
+}
+#txtemail { margin-bottom: 15px; }
+#txtface { margin-left: 10px; width: 90px; }
+#txttwit { width: 70px; }
+#txtinsta { width: 86px; }
+#txtface, #txttwit, #txtinsta 
+{ 
+           height: 16px;
+           margin-top: 10px;
+           margin-bottom: 5px;
+           margin-right: 5px;
+           font-family: Helvetica, Serif, Calibri;
+           font-size: 13px;
+           position: relative;
+           text-align: left;
+           text-indent: 2px;
+           font-weight: 600;
+           opacity: 0.4;
+           color: #1b0202;
+           display: inline-block;
+ }
+ #txtface::before {
+        content: url("../resource/face.png");
+        transform: scale(1);
+ }
+ #txtface:hover { opacity: 1; }
+ #txttwit::before {
+        content: url("../resource/twitt.png");
+        transform: scale(1);
+ }
+ #txttwit:hover { opacity: 1; }
+ #txtinsta::before {
+        content: url("../resource/insta.png");
+        transform: scale(1);
+ }
+ #txtinsta:hover { opacity: 1; }
+
+ #lbmapa { z-index: 1; }
+ #titumapa { height: 150px;
+             width: auto;
+           }
+#dvtienda, #dvrest 
+{
+             width: auto;
+             height: 18px;
+             font-family: Helvetica, Serif, Calibri;
+             font-size: 14px;
+             margin: 10px;
+             border-bottom: 1px solid #2b0000;
+             font-weight: bold;
+}
+
+#lb1tienda, #lb2tienda, #lb1rest, #lb2rest 
+{ 
+                        width: auto;
+                         height: 13px;
+                         font-family: Helvetica, Serif, Calibri;
+                         font-size: 12px;
+                         margin-left: 10px;
+                         margin-bottom: 7px;
+}
+#lb1tienda::before, #lb1rest::before
+ {
+        content: url("../resource/ubica.png");
+        transform: scale(1);
+ }
+
+ #cjlogo {
+        width: auto;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+ }
+
+ #ftlogo {
+         width: 120px;
+         height: 100px;
+         display: inline-block;
+         background-color: #fff;
+         content: url("../resource/logo.jpg");
+ }
+
+ #portada {
+         width: auto;
+         height: 80px;
+         display: block;
+         margin-left: 8px;
+         margin-right: 8px;
+ }
+
+ #subtt {
+        width: auto;
+        height: 50px;
+        text-align: center;
+        display: block;
+        background-color: #fff;
+ }
+
+ #lbtt {
+         position: relative;
+         top: 18px;
+         font-family: Helvetica, Serif, Calibri;
+         font-size: 18px;
+         color: #120000;
+         font-weight: bold;
+         text-align: center;
+ }
+
+ #subtl {
+        width: auto;
+        height: 30px;
+        display: block;
+        text-align: center;
+        background-color: #ff8f8f;
+        color: #fff;
+        font-size: 10px;
+        font-family: Helvetica, Serif, Calibri;
+ }
+
+ #lbsub {
+         position: relative;
+         top: 10px;
+ }
+
+ #fotopag {
+         content: url("../resource/pago.jpg");
+         width: 100%;
+         height: 150px;
+         align-content: center;
+ }
+
+ #tipop {
+         width: auto;
+         height: 50px;
+         background-color: #bcd6ff;
+         text-align: center;
+         margin-left: 8px;
+         margin-right: 8px;
+ }
+
+ #lbtipop {
+        font-family: Helvetica, Serif, Calibri;
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        top: 18px;
+ }
+
+ #cjpichincha {
+         width: auto;
+         height: 60px;
+         margin-left: 8px;
+         margin-right: 8px;
+         margin-top: 10px;
+ }
+
+ #ttpichincha {
+         width: 130px;
+         height: 0px;
+         border-right: 20px solid transparent;
+         border-bottom: 30px solid #3099DB;
+         display: inline-block;
+ }
+
+ #minicd1
+ {
+         width: 25px;
+         height: 30px;
+         clip-path: polygon(0 0, 15% 0, 100% 100%, 85% 100%);
+         display: inline-block;
+         position: absolute;
+         left: 140px;
+         background-color: #3099DB;
+ }
+
+ #lbpichincha {
+         display: inline-block;
+         color: #fff;
+         position: relative;
+         top: 5px;
+         text-indent: 10px;
+         font-weight: 500;
+         font-size: 15px;
+         font-family: Helvetica, Serif, Calibri;
+ }
+
+ #nmcuenta {
+        color: #120000;
+        position: relative;
+        margin-top: 7px;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: Helvetica, Serif, Calibri;
+ }
+
+ #subfood {
+         margin-top: 10px;
+         width: auto;
+         height: 90px;
+         margin-left: 8px;
+         margin-right: 8px;
+         background-color: #bcd6ff;
+ }
+
+ #subfood > div {
+         width: auto;
+         height: 20px;
+         margin-top: 5px;
+         text-indent: 10px;
+         font-family: Helvetica, Serif, Calibri;
+         font-size: 14px;
+         position: relative;
+         top: 10px;
+         color: #0b3b57;
+         cursor: pointer;
+ }
+
+ #subfood > div:hover
+ {
+         color: #3099DB;
+ } 
+
+#cajabancos {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+        height: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+}
+.lascajitas {
+        width: 120px;
+        height: 85px;
+        border: solid 1px rgb(228, 228, 228);
+        box-shadow: 0px 1px 1px 0px rgb(243, 243, 243);
+        display: inline-flex;
+        margin-right: 5px;
+        margin-top: 10px;
+        position: relative;
+        cursor: pointer;
+}
+.lascajitas > div:first-child {
+        width: 100%;
+        height: 60px;
+        display: inline-block;
+        text-align: center;
+}
+.lascajitas > div:first-child > div {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+}
+.lascajitas > div:last-child { 
+        text-align: center; 
+        font-size: 10px; 
+        font-family: Helvetica, Serif, Calibri;
+        width: 100%;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+}
+
+#icono1 { content: url("../resource/pichincha.png"); }
+#icono2 { content: url("../resource/produbanco.png"); }
+#icono3 { content: url("../resource/pacifico.png"); }
+#icono4 { content: url("../resource/guayaquil.png"); }
+#icono5 { content: url("../resource/internacional.png"); }
+#icono6 { content: url("../resource/bolivariano.png"); }
+#icono7 { content: url("../resource/austro.png"); }
+#icono8 { content: url("../resource/jep.png"); }
+
+#cajanotif {
+        width: 250px;
+        height: 188px;
+        border: solid 1px rgb(228, 228, 228);
+        box-shadow: 0px 1px 1px 0px rgb(243, 243, 243);
+        display: inline-block;
+        border-radius: 0px 16px 0px 16px;
+}
+
+#nofcierre {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        height: 27px;
+        border-bottom: 1px solid #e7e7e7;
+        box-shadow: 0px 0px 1px 0px #fefefe;
+        text-indent: 10px;
+}
+
+#nofbtcierre {
+        width: 24px;
+        height: 24px;
+        border-radius: 18px 18px 18px 18px;
+        border: solid #fcfcfc 1px;
+        box-shadow: 0px 0px 2px 0px #c4c4c4;
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        color: #d8d8d8;
+        font-family: Helvetica, Serif, Calibri;
+        font-size: 19px;
+        text-align: center;
+        text-indent: 0px;
+}
+
+#contnotif {
+        width: 100%;
+        height: 160px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+}
+
+.fotonotif {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        position: relative;
+}
+
+.lbnotifcaciones {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 17px;
+        text-align: left;
+        font-size: 11px;
+        font-family: Helvetica, Serif, Calibri;
+        text-indent: 20px;
+}
+
+#imgfact {
+        width: 100%;
+        height: 180px;
+        content: url("../resource/facturas.png");
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+#imgdevol {
+        width: 100%;
+        height: 180px;
+        content: url("../resource/devoluciones.png");
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+#imgenvio 
+{
+        width: 100%;
+        height: 180px;
+        content: url("../resource/envios.png");
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
+#ttfact {
+        width: auto;
+        height: 25px;
+        text-align: left;
+        font-size: 15px;
+        font-family: Helvetica, Serif, Calibri;
+        margin-top: 15px;
+        font-weight: bold;
+}
+
+#ttcambio, #ttdevol, #ttenvio 
+{
+        width: auto;
+        height: 25px;
+        text-align: left;
+        font-size: 15px;
+        font-family: Helvetica, Serif, Calibri;
+        margin-top: 15px;
+        font-weight: bold;
+}
+
+#txtfact {
+        text-align: justify;
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        font-family: Helvetica, Serif, Calibri;
+        margin-top: 12px;
+}
+
+#txtcambio, #txtdevol, #txtenvio
+{
+        text-align: justify;
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+        font-family: Helvetica, Serif, Calibri;
+        margin-top: 12px;
+}
+
+#btnrestau {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 10px;
+        width: auto;
+        height: 85px;
+        text-align: center;
+        position: relative;
+}
+
+#btnres {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: #df89f0;
+        cursor: pointer;
+        position: relative;
+}
+
+#btnres:hover { background-color: #bb5bce; }
+
+#lbnres{
+        font-size: 18px;
+        font-family: Helvetica, Serif, Calibri;
+        text-align: left;
+        display: inline-block;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        top: 25%;
+        left: 10%;
+        width: 70%;
+}
+
+#iconres {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+        content: url("../resource/comida.png");
+}
+
+#cjbtprov {
+        margin-top: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 45px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+
+.nuevdiv {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #e6e6e68c;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 2px 2px 2px 2px;
+}
+
+.nuevdiv:hover {
+        background-color: #f8f8f8c9;
+        font-weight: bold;
+        box-shadow: 0px 0px 1px 1px #e2e2e2;
+}
+
+.lbnuevdiv {
+        width: 100px;
+        height: 13.5px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        font-family: Helvetica, Serif, Calibri;
+        overflow: hidden;
+}
+
+.imgnuevdiv {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        display: inline-block;
+        margin-top: 5px;
+}
+
+#imgnuevdiv1 { content: url("../resource/provincias/esmeraldas.png"); }
